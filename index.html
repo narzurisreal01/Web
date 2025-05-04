@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/@codingnepal -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot | Lớp 7/1</title>
+    <!-- Linking Google Fonts For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@32,400,0,0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <!-- App Header -->
+      <header class="app-header">
+        <div class="nav-logo">
+          <a href="#">
+              <img style="position: relative; top: -40px;" class="nav-logos" src="logo.png">
+          </a>
+          <div  style="text-align: right;">
+            
+          <button  onclick="window.location.href='https://narzurisreal01.github.io/Aii'"  class="btn" style="position: relative; top: -110px;">Đổi Chế Độ Hình Ảnh</button>
+          </div>
+      </div>
+
+        <h1 class="heading">Chào Bạn, Tôi Là Quốc Huy</h1>
+        <h4 class="sub-heading">Quản Trị Viên Của Web</h4>
+        <p>
+          Chúng tôi tạo ra trang web này với mục đích muốn cải thiện
+          khả năng học tập và sáng tạo của các bạn học sinh.Xin chúc các bạn có 1 trải nghiệm thú vị!
+      </p>
+      </header>
+      <!-- Suggestions List -->
+      <ul class="suggestions">
+        <li class="suggestions-item">
+          <p class="text">Nêu cho tôi 1 số biện pháp bảo vệ môi trường.</p>
+          <span class="icon material-symbols-rounded">draw</span>
+        </li>
+        <li class="suggestions-item">
+          <p class="text">Tại sao hiện nay Trái Đất ngày càng nóng lên?</p>
+          <span class="icon material-symbols-rounded">lightbulb</span>
+        </li>
+        <li class="suggestions-item">
+          <p class="text">Viết cho tôi 1 bài văn nghị luận xã hội về vấn đề bạo lực học đường.</p>
+          <span class="icon material-symbols-rounded">explore</span>
+        </li>
+        <li class="suggestions-item">
+          <p class="text">Tạo cho tôi 1 thời gian biểu học tập khoa học hiệu quả.</p>
+          <span class="icon material-symbols-rounded">code_blocks</span>
+        </li>
+      </ul>
+      <!-- Chats -->
+      <div class="chats-container"></div>
+      <!-- Prompt Input -->
+      <div class="prompt-container">
+        <div class="prompt-wrapper">
+          <form action="#" class="prompt-form">
+            <input type="text" placeholder="Nhập câu hỏi..." class="prompt-input" required />
+            <div class="prompt-actions">
+              <!-- File Upload Wrapper -->
+              <div class="file-upload-wrapper">
+                <img src="#" class="file-preview" />
+                <input id="file-input" type="file" accept="image/*, .pdf, .txt, .csv" hidden />
+                <button type="button" class="file-icon material-symbols-rounded">description</button>
+                <button id="cancel-file-btn" type="button" class="material-symbols-rounded">close</button>
+                <button id="add-file-btn" type="button" class="material-symbols-rounded">attach_file</button>
+              </div>
+              <!-- Send Prompt and Stop Response Buttons -->
+              <button id="stop-response-btn" type="button" class="material-symbols-rounded">stop_circle</button>
+              <button id="send-prompt-btn" class="material-symbols-rounded">arrow_upward</button>
+            </div>
+          </form>
+          <!-- Theme and Delete Chats Buttons -->
+          <button id="theme-toggle-btn" class="material-symbols-rounded">light_mode</button>
+          <button id="delete-chats-btn" class="material-symbols-rounded">delete</button>
+        </div>
+        <p class="disclaimer-text">Học Cùng Bạn Chat - Vui Học Mỗi Ngày.</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
